@@ -12,8 +12,8 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
           '@type': 'Organization',
           name: 'AIOS LLC',
           alternateName: 'Authentic Intelligence Operating System',
-          url: 'https://aios.marketing',
-          logo: 'https://aios.marketing/images/aios-wm.png',
+          url: 'https://aios.llc',
+          logo: 'https://aios.llc/images/aios-wm.png',
           description: 'Commission-based marketing agency for auto and home service businesses. Zero upfront cost, 10% commission on sales we generate.',
           areaServed: [
             { '@type': 'City', name: 'Portland', containedInPlace: { '@type': 'State', name: 'Oregon' } },

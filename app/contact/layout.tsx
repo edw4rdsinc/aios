@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contact AIOS - Schedule Free Consultation',
     description: 'Free consultation for commission-based marketing. No upfront costs. We only win when you win.',
-    url: 'https://aios.marketing/contact',
+    url: 'https://aios.llc/contact',
     siteName: 'AIOS',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://aios.marketing/contact',
+    canonical: 'https://aios.llc/contact',
   },
 }
 

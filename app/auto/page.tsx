@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'AIOS Auto | Marketing for Auto Glass, PDR & Mobile Mechanics',
     description: 'Zero upfront cost marketing for auto service businesses. We only get paid when you get paid.',
-    url: 'https://aios.marketing/auto',
+    url: 'https://aios.llc/auto',
     siteName: 'AIOS',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://aios.marketing/auto',
+    canonical: 'https://aios.llc/auto',
   },
 }
 

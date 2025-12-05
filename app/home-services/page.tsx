@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'AIOS Home | Marketing for Window, Roofing & Handyman Services',
     description: 'Zero upfront cost marketing for home service businesses. We only get paid when you get paid.',
-    url: 'https://aios.marketing/home-services',
+    url: 'https://aios.llc/home-services',
     siteName: 'AIOS',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://aios.marketing/home-services',
+    canonical: 'https://aios.llc/home-services',
   },
 }
 

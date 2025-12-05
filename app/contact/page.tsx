@@ -618,7 +618,7 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <h3 className="font-bold text-dark-900 mb-1">Email</h3>
-                <p className="text-gray-600">hello@aios.marketing</p>
+                <p className="text-gray-600">hello@aios.llc</p>
               </div>
               <div className="bg-aios-light-grey rounded-xl p-6">
                 <div className="w-12 h-12 bg-primary-500/10 rounded-full flex items-center justify-center mx-auto mb-4">

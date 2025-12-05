@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About Us | AIOS - Commission-Based Marketing Agency',
     description: 'We built a marketing agency where our success is tied directly to yours.',
-    url: 'https://aios.marketing/about',
+    url: 'https://aios.llc/about',
     siteName: 'AIOS',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://aios.marketing/about',
+    canonical: 'https://aios.llc/about',
   },
 }
 

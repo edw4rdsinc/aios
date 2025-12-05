@@ -13,7 +13,7 @@ export const viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://aios.marketing'),
+  metadataBase: new URL('https://aios.llc'),
   title: {
     default: 'AIOS | Commission-Based Marketing for Service Businesses',
     template: '%s | AIOS',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://aios.marketing',
+    url: 'https://aios.llc',
     siteName: 'AIOS',
     title: 'AIOS | Commission-Based Marketing for Service Businesses',
     description: 'Zero upfront cost, 10% commission on sales we generate. We only win when you win.',
