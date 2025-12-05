@@ -54,7 +54,7 @@ const faqs = [
     a: "We have a partnership agreement that outlines the commission structure and expectations, but we're not in the business of forcing relationships. If it's not working, we can part ways professionally.",
   },
   {
-    q: 'How do I know you'll actually deliver results?',
+    q: "How do I know you'll actually deliver results?",
     a: "You don't, and we don't make guarantees. But here's what we can tell you: We only make money if you make money. Our commission model means we're highly motivated to deliver results. We're transparent about what's working and what's not.",
   },
 ]
