@@ -222,7 +222,7 @@ export default function ContactPage() {
                 'Your current customer acquisition methods and challenges',
                 'Your business goals and growth targets',
                 'How the AIOS commission model works',
-                'Whether we're a good fit for partnership',
+                "Whether we're a good fit for partnership",
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <svg className="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
