@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+@theme {
+  /* AIOS Brand Colors - Matrix-inspired */
+  --color-aios-black: #0D0D0D;
+  --color-aios-dark: #1a1a1a;
+  --color-aios-green: #00FF41;
+  --color-aios-green-dark: #00CC33;
+  --color-aios-green-muted: #008F11;
+  --color-aios-grey: #333333;
+  --color-aios-light-grey: #F5F5F5;
+  --color-aios-white: #FFFFFF;
+
+  /* Primary/Accent aliases */
+  --color-primary-50: #e6ffe9;
+  --color-primary-100: #ccffd4;
+  --color-primary-200: #99ffa8;
+  --color-primary-300: #66ff7d;
+  --color-primary-400: #33ff5f;
+  --color-primary-500: #00FF41;
+  --color-primary-600: #00CC33;
+  --color-primary-700: #008F11;
+  --color-primary-800: #005c0b;
+  --color-primary-900: #003306;
+
+  /* Dark scale */
+  --color-dark-50: #f7f7f7;
+  --color-dark-100: #e3e3e3;
+  --color-dark-200: #c8c8c8;
+  --color-dark-300: #a4a4a4;
+  --color-dark-400: #818181;
+  --color-dark-500: #666666;
+  --color-dark-600: #515151;
+  --color-dark-700: #434343;
+  --color-dark-800: #383838;
+  --color-dark-900: #1a1a1a;
+  --color-dark-950: #0D0D0D;
+}
+
+:root {
+  /* AIOS Brand Colors (for custom CSS) */
+  --aios-black: #0D0D0D;
+  --aios-dark: #1a1a1a;
+  --aios-green: #00FF41;
+  --aios-green-dark: #00CC33;
+  --aios-green-muted: #008F11;
+  --aios-grey: #333333;
+  --aios-light-grey: #F5F5F5;
+  --aios-white: #FFFFFF;
+
+  /* Font Families */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-mono: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Menlo, monospace;
+
+  /* Base Font Sizes */
+  --text-xs: .75rem;
+  --text-sm: .875rem;
+  --text-base: 1rem;
+
+  /* Responsive Font Sizes using clamp() */
+  --text-lg: clamp(1.125rem, 0.9688rem + 0.5vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 0.9375rem + 1vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.1875rem + 1vw, 1.75rem);
+  --text-3xl: clamp(1.75rem, 1.2813rem + 1.5vw, 2.125rem);
+  --text-4xl: clamp(2.125rem, 0.8125rem + 3vw, 2.5rem);
+  --text-5xl: clamp(2.5rem, 1.0313rem + 3.5vw, 3rem);
+
+  /* Font Weights and Line Heights */
+  --font-bold: 600;
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+}
+
+/* Base body styling */
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  font-weight: 400;
+  color: var(--aios-grey);
+  background-color: var(--aios-white);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
+  color: inherit;
+}
+
+h1 { font-size: var(--text-3xl); }
+h2 { font-size: var(--text-2xl); }
+h3 { font-size: var(--text-xl); }
+h4 { font-size: var(--text-lg); }
+h5 { font-size: var(--text-base); }
+h6 { font-size: var(--text-sm); }
+
+/* Monospace for code elements */
+pre, code, kbd, samp {
+  font-family: var(--font-mono);
+}
+
+/* Default link styling with brand colors */
+a:not([class*="text-"]):not([class*="bg-"]) {
+  color: var(--aios-green-dark);
+  transition: color 0.2s ease;
+}
+
+a:not([class*="text-"]):not([class*="bg-"]):hover {
+  color: var(--aios-green);
+}
+
+/* Matrix-inspired glow effect */
+.glow-green {
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+}
+
+.glow-green-strong {
+  box-shadow: 0 0 30px rgba(0, 255, 65, 0.5);
+}
+
+/* Text glow effect */
+.text-glow {
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}
+
+/* Gradient backgrounds */
+.bg-gradient-dark {
+  background: linear-gradient(135deg, #0D0D0D 0%, #1a1a1a 100%);
+}
+
+.bg-gradient-green {
+  background: linear-gradient(135deg, #008F11 0%, #00FF41 100%);
+}
+
+/* Custom shadow system */
+.shadow-aios-soft {
+  box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-aios-bold {
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-aios-crisp {
+  box-shadow: 6px 6px 0px rgba(0, 255, 65, 0.2);
+}
+
+.shadow-aios-deep {
+  box-shadow: 12px 12px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth backdrop blur support */
+@supports (backdrop-filter: blur(12px)) {
+  .backdrop-blur-md {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
+
+/* Selection styling */
+::selection {
+  background-color: rgba(0, 255, 65, 0.3);
+  color: #0D0D0D;
+}
