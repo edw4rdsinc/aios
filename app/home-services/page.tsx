@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'AIOS Home | Marketing for Window, Roofing & Handyman Services',
-  description: 'Commission-based marketing for home service businesses. Window installation, roofing, handyman, pressure washing. Zero upfront cost, 10% commission on sales.',
+  description: 'Commission-based marketing for home service businesses. Window installation, roofing, handyman, pressure washing. Zero upfront cost, commission only on sales we generate.',
   openGraph: {
     title: 'AIOS Home | Marketing for Window, Roofing & Handyman Services',
     description: 'Zero upfront cost marketing for home service businesses. We only get paid when you get paid.',

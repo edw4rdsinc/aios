@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     default: 'AIOS | Commission-Based Marketing for Service Businesses',
     template: '%s | AIOS',
   },
-  description: 'Zero upfront cost, 10% commission on sales we generate. Marketing for auto glass, PDR, mobile mechanics, roofing, window installation, and more.',
+  description: 'Zero upfront cost, commission only on sales we generate. Marketing for auto glass, PDR, mobile mechanics, roofing, window installation, and more.',
   keywords: ['commission-based marketing', 'auto glass marketing', 'PDR marketing', 'mobile mechanic leads', 'window installation marketing', 'roofing leads', 'service business marketing'],
   authors: [{ name: 'AIOS LLC' }],
   creator: 'AIOS LLC',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     url: 'https://aios.llc',
     siteName: 'AIOS',
     title: 'AIOS | Commission-Based Marketing for Service Businesses',
-    description: 'Zero upfront cost, 10% commission on sales we generate. We only win when you win.',
+    description: 'Zero upfront cost, commission only on sales we generate. We only win when you win.',
   },
   twitter: {
     card: 'summary_large_image',

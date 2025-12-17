@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'About Us | AIOS - Commission-Based Marketing Agency',
-  description: 'Meet the team behind AIOS. We built a marketing agency where our success is tied directly to yours. Zero upfront cost, 10% commission on results.',
+  description: 'Meet the team behind AIOS. We built a marketing agency where our success is tied directly to yours. Zero upfront cost, commission only on results.',
   openGraph: {
     title: 'About Us | AIOS - Commission-Based Marketing Agency',
     description: 'We built a marketing agency where our success is tied directly to yours.',
@@ -63,7 +63,7 @@ export default function AboutPage() {
                 So we asked ourselves: <strong className="text-dark-900">What if we built an agency that only gets paid when our partners get paid?</strong>
               </p>
               <p className="text-lg leading-relaxed">
-                That&apos;s AIOS. Zero upfront cost. 10% commission on sales we generate. Complete alignment between our success and yours.
+                That&apos;s AIOS. Zero upfront cost. Commission only on sales we generate. Complete alignment between our success and yours.
               </p>
             </div>
           </AnimatedSection>
@@ -206,7 +206,7 @@ export default function AboutPage() {
 
             <AnimatedSection animation="fade-up" delay={200}>
               <div className="text-center">
-                <div className="text-5xl font-bold text-primary-500 mb-4">10%</div>
+                <div className="text-5xl font-bold text-primary-500 mb-4">%</div>
                 <h3 className="text-xl font-bold mb-2">Commission Only</h3>
                 <p className="text-gray-400">
                   We only earn when you earn. Our incentives are perfectly aligned with your success.

@@ -59,7 +59,7 @@ export default function AIBotsPage() {
           break
       }
 
-      let url = `${SUPABASE_URL}/rest/v1/ai_bot_visits?select=*&timestamp=gte.${startDate.toISOString()}&order=timestamp.desc&limit=500`
+      let url = `${SUPABASE_URL}/rest/v1/ai_bot_visits?select=*&timestamp=gte.${startDate.toISOString()}&order=timestamp.desc&limit=100000`
 
       if (selectedSite !== 'all') {
         url += `&site=eq.${selectedSite}`

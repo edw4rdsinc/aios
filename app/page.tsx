@@ -5,10 +5,10 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'AIOS | Zero-Cost Marketing for Auto & Home Service Businesses',
-  description: 'Your sales & marketing partner. No upfront costs, no retainers. We earn 10% commission on sales we generate for auto glass, PDR, mobile mechanics, window installation, roofing, and handyman businesses.',
+  description: 'Your sales & marketing partner. No upfront costs, no retainers. We earn commission only on sales we generate for auto glass, PDR, mobile mechanics, window installation, roofing, and handyman businesses.',
   openGraph: {
     title: 'AIOS | Zero-Cost Marketing for Auto & Home Service Businesses',
-    description: 'Your sales & marketing partner. No upfront costs, no retainers. We earn 10% commission on sales we generate.',
+    description: 'Your sales & marketing partner. No upfront costs, no retainers. We earn commission only on sales we generate.',
     url: 'https://aios.llc',
     siteName: 'AIOS',
     type: 'website',
@@ -42,7 +42,7 @@ export default function HomePage() {
                 <span className="text-primary-500">Not Marketing Headaches.</span>
               </h1>
               <p className="text-xl sm:text-2xl mb-4 text-gray-300">
-                Zero upfront cost. <span className="text-primary-400 font-semibold">10% commission on sales we generate.</span> That&apos;s it.
+                Zero upfront cost. <span className="text-primary-400 font-semibold">Commission only on sales we generate.</span> That&apos;s it.
               </p>
               <p className="text-lg mb-8 text-gray-400">
                 We handle your marketing, sales, and customer acquisition so you can focus on what you do best: delivering exceptional service.
@@ -191,10 +191,10 @@ export default function HomePage() {
             <AnimatedSection animation="fade-up" delay={200}>
               <div className="text-center">
                 <div className="w-16 h-16 bg-primary-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-primary-600">10%</span>
+                  <span className="text-2xl font-bold text-primary-600">%</span>
                 </div>
                 <h3 className="text-xl font-bold text-dark-900 mb-2">Commission Model</h3>
-                <p className="text-gray-600">We earn 10% of the sales we generate for you. That&apos;s it. If we don&apos;t bring you customers, we don&apos;t get paid.</p>
+                <p className="text-gray-600">We earn a commission on sales we generate for you. That&apos;s it. If we don&apos;t bring you customers, we don&apos;t get paid.</p>
               </div>
             </AnimatedSection>
 
@@ -249,7 +249,7 @@ export default function HomePage() {
               { step: '2', title: 'Customers Find You', desc: 'Your business appears in search results when customers need you' },
               { step: '3', title: 'Track Every Lead', desc: 'Custom forms, tracking numbers, full attribution transparency' },
               { step: '4', title: 'You Do Your Thing', desc: 'Customer calls, you provide exceptional service, they pay you' },
-              { step: '5', title: 'We Get Paid', desc: 'You report the sale, we invoice 10% commission. Everyone wins.' },
+              { step: '5', title: 'We Get Paid', desc: 'You report the sale, we invoice our commission. Everyone wins.' },
             ].map((item, index) => (
               <AnimatedSection key={item.step} animation="fade-up" delay={index * 100}>
                 <div className="text-center">
@@ -312,7 +312,7 @@ export default function HomePage() {
             {[
               { q: 'How do I know AIOS actually generated the sale?', a: 'We use custom tracking mechanisms including unique forms, dedicated tracking phone numbers, UTM codes, and analytics. Everything is transparent—you\'ll know exactly which customers came from AIOS.' },
               { q: 'What if I already have a website?', a: 'Great! We can optimize your existing site or build a new one from scratch. Either way, we ensure it\'s set up to convert visitors into leads and track attribution properly.' },
-              { q: 'What\'s the 10% commission based on?', a: 'The gross sale amount you receive from the customer. If we generate a $300 windshield replacement job, you pay AIOS $30. Simple, transparent, fair.' },
+              { q: 'How does the commission work?', a: 'We agree on a fair commission rate based on your business and margins. You pay commission on the gross sale amount from customers we generate. Simple, transparent, and customized to your business.' },
               { q: 'How long does it take to see results?', a: 'It varies. Some partners see leads within 30 days. Others take 60-90 days as we build content, optimize campaigns, and gain traction. The marketing engine gets stronger over time.' },
               { q: 'Do you work with multiple businesses in the same area?', a: 'We offer exclusivity within your vertical and metro area. If you\'re our auto glass partner in Portland, we won\'t sign another auto glass company in Portland.' },
             ].map((item, index) => (

@@ -501,7 +501,7 @@ export default function ContactPage() {
               {
                 step: '4',
                 title: "We'll Propose a Partnership (If We're Aligned)",
-                desc: "If we both think there's a good fit, we'll draft a simple partnership agreement outlining the 10% commission structure, explain tracking mechanisms, and answer any remaining questions.",
+                desc: "If we both think there's a good fit, we'll draft a simple partnership agreement outlining the commission structure, explain tracking mechanisms, and answer any remaining questions.",
               },
               {
                 step: '5',

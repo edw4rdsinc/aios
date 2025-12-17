@@ -23,7 +23,7 @@ export default function Footer() {
               Your Sales &amp; Marketing Partner. We Only Win When You Win.
             </p>
             <p className="text-primary-500 text-sm mt-2 font-medium">
-              10% Commission. Zero Upfront Cost.
+              Commission Only. Zero Upfront Cost.
             </p>
           </div>
 

@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'AIOS Auto | Marketing for Auto Glass, PDR & Mobile Mechanics',
-  description: 'Commission-based marketing for auto service businesses. Auto glass, windshield repair, paintless dent repair, mobile mechanics. Zero upfront cost, 10% commission on sales.',
+  description: 'Commission-based marketing for auto service businesses. Auto glass, windshield repair, paintless dent repair, mobile mechanics. Zero upfront cost, commission only on sales we generate.',
   openGraph: {
     title: 'AIOS Auto | Marketing for Auto Glass, PDR & Mobile Mechanics',
     description: 'Zero upfront cost marketing for auto service businesses. We only get paid when you get paid.',
@@ -260,8 +260,8 @@ export default function AutoPage() {
                   </div>
                   <div>
                     <div className="flex justify-between mb-2">
-                      <span className="text-gray-400">AIOS Commission (10%)</span>
-                      <span className="text-gray-400 font-bold">$5K-$20K/year</span>
+                      <span className="text-gray-400">AIOS Commission</span>
+                      <span className="text-gray-400 font-bold">Varies by agreement</span>
                     </div>
                     <div className="w-full bg-dark-800 rounded-full h-2">
                       <div className="bg-gray-600 h-2 rounded-full" style={{ width: '10%' }}></div>
@@ -269,7 +269,7 @@ export default function AutoPage() {
                   </div>
                 </div>
                 <p className="text-gray-500 text-sm mt-6">
-                  We help you land fleet accounts you&apos;d never reach on your own—and you keep 90% of every dollar.
+                  We help you land fleet accounts you&apos;d never reach on your own—and you keep the majority of every dollar.
                 </p>
               </div>
             </AnimatedSection>
