@@ -99,7 +99,7 @@ export default function AIBotsPage() {
     }
   }
 
-  const sites = ['all', 'glassadvisor.org', 'dentadvisor.org', 'windshieldadvisor.org', 'aios.marketing', 'carstudiospdr.com']
+  const sites = ['all', 'glassadvisor.org', 'dentadvisor.org', 'windshieldadvisor.org', 'aios.marketing', 'carstudiospdr.com', 'cwcustomworks.com']
 
   const formatDate = (timestamp: string) => {
     return new Date(timestamp).toLocaleString()
