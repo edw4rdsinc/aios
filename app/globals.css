@@ -1,27 +1,55 @@
 @import "tailwindcss";
 
 @theme {
-  /* AIOS Brand Colors - Matrix-inspired */
-  --color-aios-black: #0D0D0D;
-  --color-aios-dark: #1a1a1a;
-  --color-aios-green: #00FF41;
-  --color-aios-green-dark: #00CC33;
-  --color-aios-green-muted: #008F11;
-  --color-aios-grey: #333333;
-  --color-aios-light-grey: #F5F5F5;
+  /* AIOS Brand Colors */
+  --color-aios-sand: #f4e1d2;
+  --color-aios-sand-light: #faf5f0;
+  --color-aios-sand-dark: #e8d4c4;
+  --color-aios-blue: #a8dadc;
+  --color-aios-blue-light: #c5e8ea;
+  --color-aios-blue-dark: #7ec8cb;
+  --color-aios-coral: #e63946;
+  --color-aios-coral-light: #f06570;
+  --color-aios-coral-dark: #c62d39;
   --color-aios-white: #FFFFFF;
+  --color-aios-dark: #2d3436;
+  --color-aios-grey: #636e72;
 
-  /* Primary/Accent aliases */
-  --color-primary-50: #e6ffe9;
-  --color-primary-100: #ccffd4;
-  --color-primary-200: #99ffa8;
-  --color-primary-300: #66ff7d;
-  --color-primary-400: #33ff5f;
-  --color-primary-500: #00FF41;
-  --color-primary-600: #00CC33;
-  --color-primary-700: #008F11;
-  --color-primary-800: #005c0b;
-  --color-primary-900: #003306;
+  /* Primary (Coral - accent for buttons/links) */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-200: #fecaca;
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f87171;
+  --color-primary-500: #e63946;
+  --color-primary-600: #c62d39;
+  --color-primary-700: #a31f2d;
+  --color-primary-800: #7f1d1d;
+  --color-primary-900: #5c1616;
+
+  /* Sand scale (backgrounds) */
+  --color-sand-50: #fdfcfb;
+  --color-sand-100: #faf5f0;
+  --color-sand-200: #f4e1d2;
+  --color-sand-300: #e8d4c4;
+  --color-sand-400: #d4c0ae;
+  --color-sand-500: #bda898;
+  --color-sand-600: #9f8a7a;
+  --color-sand-700: #7d6d5f;
+  --color-sand-800: #5c5148;
+  --color-sand-900: #3d3632;
+
+  /* Blue scale (secondary) */
+  --color-blue-50: #f0f9fa;
+  --color-blue-100: #e0f3f4;
+  --color-blue-200: #c5e8ea;
+  --color-blue-300: #a8dadc;
+  --color-blue-400: #7ec8cb;
+  --color-blue-500: #5ab4b8;
+  --color-blue-600: #439a9e;
+  --color-blue-700: #357a7d;
+  --color-blue-800: #2a5f61;
+  --color-blue-900: #1f4547;
 
   /* Dark scale */
   --color-dark-50: #f7f7f7;
@@ -29,24 +57,28 @@
   --color-dark-200: #c8c8c8;
   --color-dark-300: #a4a4a4;
   --color-dark-400: #818181;
-  --color-dark-500: #666666;
+  --color-dark-500: #636e72;
   --color-dark-600: #515151;
   --color-dark-700: #434343;
-  --color-dark-800: #383838;
+  --color-dark-800: #2d3436;
   --color-dark-900: #1a1a1a;
   --color-dark-950: #0D0D0D;
 }
 
 :root {
   /* AIOS Brand Colors (for custom CSS) */
-  --aios-black: #0D0D0D;
-  --aios-dark: #1a1a1a;
-  --aios-green: #00FF41;
-  --aios-green-dark: #00CC33;
-  --aios-green-muted: #008F11;
-  --aios-grey: #333333;
-  --aios-light-grey: #F5F5F5;
+  --aios-sand: #f4e1d2;
+  --aios-sand-light: #faf5f0;
+  --aios-sand-dark: #e8d4c4;
+  --aios-blue: #a8dadc;
+  --aios-blue-light: #c5e8ea;
+  --aios-blue-dark: #7ec8cb;
+  --aios-coral: #e63946;
+  --aios-coral-light: #f06570;
+  --aios-coral-dark: #c62d39;
   --aios-white: #FFFFFF;
+  --aios-dark: #2d3436;
+  --aios-grey: #636e72;
 
   /* Font Families */
   --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
@@ -77,8 +109,8 @@ body {
   font-size: var(--text-base);
   line-height: var(--leading-normal);
   font-weight: 400;
-  color: var(--aios-grey);
-  background-color: var(--aios-white);
+  color: var(--aios-dark);
+  background-color: var(--aios-sand-light);
 }
 
 /* Headings */
@@ -103,52 +135,61 @@ pre, code, kbd, samp {
 
 /* Default link styling with brand colors */
 a:not([class*="text-"]):not([class*="bg-"]) {
-  color: var(--aios-green-dark);
+  color: var(--aios-coral);
   transition: color 0.2s ease;
 }
 
 a:not([class*="text-"]):not([class*="bg-"]):hover {
-  color: var(--aios-green);
+  color: var(--aios-coral-dark);
 }
 
-/* Matrix-inspired glow effect */
-.glow-green {
-  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+/* Accent glow effect */
+.glow-coral {
+  box-shadow: 0 0 20px rgba(230, 57, 70, 0.3);
 }
 
-.glow-green-strong {
-  box-shadow: 0 0 30px rgba(0, 255, 65, 0.5);
+.glow-coral-strong {
+  box-shadow: 0 0 30px rgba(230, 57, 70, 0.5);
+}
+
+/* Blue glow effect */
+.glow-blue {
+  box-shadow: 0 0 20px rgba(168, 218, 220, 0.4);
 }
 
 /* Text glow effect */
 .text-glow {
-  text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+  text-shadow: 0 0 10px rgba(230, 57, 70, 0.5);
 }
 
 /* Gradient backgrounds */
-.bg-gradient-dark {
-  background: linear-gradient(135deg, #0D0D0D 0%, #1a1a1a 100%);
+.bg-gradient-sand {
+  background: linear-gradient(135deg, #faf5f0 0%, #f4e1d2 100%);
 }
 
-.bg-gradient-green {
-  background: linear-gradient(135deg, #008F11 0%, #00FF41 100%);
+.bg-gradient-blue {
+  background: linear-gradient(135deg, #c5e8ea 0%, #a8dadc 100%);
+}
+
+.bg-gradient-coral {
+  background: linear-gradient(135deg, #e63946 0%, #f06570 100%);
 }
 
 /* Custom shadow system */
 .shadow-aios-soft {
-  box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.08);
 }
 
 .shadow-aios-bold {
-  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .shadow-aios-crisp {
-  box-shadow: 6px 6px 0px rgba(0, 255, 65, 0.2);
+  box-shadow: 6px 6px 0px rgba(168, 218, 220, 0.4);
 }
 
 .shadow-aios-deep {
-  box-shadow: 12px 12px 50px rgba(0, 0, 0, 0.2);
+  box-shadow: 12px 12px 50px rgba(0, 0, 0, 0.15);
 }
 
 /* Smooth backdrop blur support */
@@ -161,6 +202,6 @@ a:not([class*="text-"]):not([class*="bg-"]):hover {
 
 /* Selection styling */
 ::selection {
-  background-color: rgba(0, 255, 65, 0.3);
-  color: #0D0D0D;
+  background-color: rgba(168, 218, 220, 0.4);
+  color: #2d3436;
 }

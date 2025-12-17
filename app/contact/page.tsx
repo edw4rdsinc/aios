@@ -123,7 +123,7 @@ export default function ContactPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-dark-950 text-white py-20 overflow-hidden">
+      <section className="relative bg-dark-800 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: `linear-gradient(rgba(0, 255, 65, 0.1) 1px, transparent 1px),
@@ -154,7 +154,7 @@ export default function ContactPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up" className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-dark-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-4">
               Two Easy Ways to Connect
             </h2>
             <p className="text-xl text-gray-600">
@@ -164,19 +164,19 @@ export default function ContactPage() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <AnimatedSection animation="fade-up" delay={100}>
-              <div className="bg-aios-light-grey rounded-xl p-8 h-full flex flex-col">
+              <div className="bg-sand-100 rounded-xl p-8 h-full flex flex-col">
                 <div className="w-14 h-14 bg-primary-500/10 rounded-xl flex items-center justify-center mb-6">
                   <svg className="w-7 h-7 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-dark-900 mb-3">Schedule a Free Consultation</h3>
+                <h3 className="text-2xl font-bold text-dark-800 mb-3">Schedule a Free Consultation</h3>
                 <p className="text-gray-600 mb-6 flex-grow">
                   Book a 30-minute call to discuss your business, your goals, and how AIOS can help you grow.
                 </p>
                 <a
                   href="#schedule"
-                  className="inline-block bg-primary-600 text-dark-950 px-6 py-3 rounded-md font-semibold text-center hover:bg-primary-500 transition-all hover:scale-105"
+                  className="inline-block bg-primary-600 text-white px-6 py-3 rounded-md font-semibold text-center hover:bg-primary-500 transition-all hover:scale-105"
                 >
                   Book a Call
                 </a>
@@ -184,19 +184,19 @@ export default function ContactPage() {
             </AnimatedSection>
 
             <AnimatedSection animation="fade-up" delay={200}>
-              <div className="bg-aios-light-grey rounded-xl p-8 h-full flex flex-col">
+              <div className="bg-sand-100 rounded-xl p-8 h-full flex flex-col">
                 <div className="w-14 h-14 bg-primary-500/10 rounded-xl flex items-center justify-center mb-6">
                   <svg className="w-7 h-7 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-dark-900 mb-3">Send Us a Message</h3>
+                <h3 className="text-2xl font-bold text-dark-800 mb-3">Send Us a Message</h3>
                 <p className="text-gray-600 mb-6 flex-grow">
                   Fill out the contact form and we&apos;ll respond within 1-2 business days.
                 </p>
                 <a
                   href="#contact-form"
-                  className="inline-block bg-transparent border-2 border-gray-300 text-dark-900 px-6 py-3 rounded-md font-semibold text-center hover:border-primary-500 hover:text-primary-600 transition-all"
+                  className="inline-block bg-transparent border-2 border-gray-300 text-dark-800 px-6 py-3 rounded-md font-semibold text-center hover:border-primary-500 hover:text-primary-600 transition-all"
                 >
                   Send Message
                 </a>
@@ -207,10 +207,10 @@ export default function ContactPage() {
       </section>
 
       {/* Schedule Consultation */}
-      <section id="schedule" className="py-20 bg-aios-light-grey">
+      <section id="schedule" className="py-20 bg-sand-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up">
-            <h2 className="text-3xl sm:text-4xl font-bold text-dark-900 mb-4 text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-4 text-center">
               Schedule Your Free Consultation
             </h2>
             <p className="text-xl text-gray-600 text-center mb-8">
@@ -246,7 +246,7 @@ export default function ContactPage() {
 
             {/* What to Expect */}
             <div className="bg-white rounded-xl p-8 shadow-sm">
-              <h3 className="text-xl font-bold text-dark-900 mb-6">What to Expect:</h3>
+              <h3 className="text-xl font-bold text-dark-800 mb-6">What to Expect:</h3>
               <div className="grid sm:grid-cols-2 gap-6">
                 {[
                   { title: 'Free 30-minute consultation', desc: 'No cost, no commitment' },
@@ -261,7 +261,7 @@ export default function ContactPage() {
                       </svg>
                     </div>
                     <div>
-                      <p className="font-semibold text-dark-900">{item.title}</p>
+                      <p className="font-semibold text-dark-800">{item.title}</p>
                       <p className="text-gray-600 text-sm">{item.desc}</p>
                     </div>
                   </div>
@@ -276,7 +276,7 @@ export default function ContactPage() {
       <section id="contact-form" className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up">
-            <h2 className="text-3xl sm:text-4xl font-bold text-dark-900 mb-4 text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-4 text-center">
               Send Us a Message
             </h2>
             <p className="text-xl text-gray-600 text-center mb-12">
@@ -288,14 +288,14 @@ export default function ContactPage() {
                 <svg className="w-16 h-16 text-primary-600 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <h3 className="text-2xl font-bold text-dark-900 mb-2">Message Sent!</h3>
+                <h3 className="text-2xl font-bold text-dark-800 mb-2">Message Sent!</h3>
                 <p className="text-gray-600">Thank you for reaching out. We&apos;ll get back to you within 1-2 business days.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-dark-900 mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-dark-800 mb-2">
                       Name <span className="text-red-500">*</span>
                     </label>
                     <input
@@ -310,7 +310,7 @@ export default function ContactPage() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-dark-900 mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-dark-800 mb-2">
                       Email <span className="text-red-500">*</span>
                     </label>
                     <input
@@ -328,7 +328,7 @@ export default function ContactPage() {
 
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-dark-900 mb-2">
+                    <label htmlFor="phone" className="block text-sm font-medium text-dark-800 mb-2">
                       Phone <span className="text-gray-400">(optional)</span>
                     </label>
                     <input
@@ -342,7 +342,7 @@ export default function ContactPage() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="businessName" className="block text-sm font-medium text-dark-900 mb-2">
+                    <label htmlFor="businessName" className="block text-sm font-medium text-dark-800 mb-2">
                       Business Name <span className="text-red-500">*</span>
                     </label>
                     <input
@@ -359,7 +359,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="industry" className="block text-sm font-medium text-dark-900 mb-2">
+                  <label htmlFor="industry" className="block text-sm font-medium text-dark-800 mb-2">
                     Industry <span className="text-red-500">*</span>
                   </label>
                   <select
@@ -379,7 +379,7 @@ export default function ContactPage() {
 
                 {formData.industry === 'Other' && (
                   <div>
-                    <label htmlFor="otherIndustry" className="block text-sm font-medium text-dark-900 mb-2">
+                    <label htmlFor="otherIndustry" className="block text-sm font-medium text-dark-800 mb-2">
                       Please specify your industry <span className="text-red-500">*</span>
                     </label>
                     <input
@@ -397,7 +397,7 @@ export default function ContactPage() {
 
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="revenue" className="block text-sm font-medium text-dark-900 mb-2">
+                    <label htmlFor="revenue" className="block text-sm font-medium text-dark-800 mb-2">
                       Current Monthly Revenue <span className="text-gray-400">(optional)</span>
                     </label>
                     <select
@@ -414,7 +414,7 @@ export default function ContactPage() {
                     </select>
                   </div>
                   <div>
-                    <label htmlFor="referralSource" className="block text-sm font-medium text-dark-900 mb-2">
+                    <label htmlFor="referralSource" className="block text-sm font-medium text-dark-800 mb-2">
                       How did you hear about AIOS?
                     </label>
                     <select
@@ -433,7 +433,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-dark-900 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-dark-800 mb-2">
                     Message <span className="text-red-500">*</span>
                   </label>
                   <textarea
@@ -455,7 +455,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-primary-600 text-dark-950 px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary-500 transition-all hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                  className="w-full bg-primary-600 text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary-500 transition-all hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>
@@ -470,10 +470,10 @@ export default function ContactPage() {
       </section>
 
       {/* What Happens Next */}
-      <section className="py-20 bg-aios-light-grey">
+      <section className="py-20 bg-sand-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up" className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-dark-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-4">
               What to Expect After You Reach Out
             </h2>
             <p className="text-xl text-gray-600">
@@ -512,10 +512,10 @@ export default function ContactPage() {
               <AnimatedSection key={item.step} animation="fade-up" delay={index * 100}>
                 <div className="bg-white rounded-xl p-6 shadow-sm flex gap-6">
                   <div className="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-xl font-bold text-dark-950">{item.step}</span>
+                    <span className="text-xl font-bold text-white">{item.step}</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-dark-900 mb-2">{item.title}</h3>
+                    <h3 className="text-xl font-bold text-dark-800 mb-2">{item.title}</h3>
                     <p className="text-gray-600">{item.desc}</p>
                   </div>
                 </div>
@@ -525,7 +525,7 @@ export default function ContactPage() {
 
           <AnimatedSection animation="fade-up" delay={500}>
             <p className="text-center text-gray-600 mt-8 bg-white rounded-xl p-6 shadow-sm">
-              <strong className="text-dark-900">If we&apos;re not the right fit, that&apos;s okay too.</strong> We&apos;ll provide recommendations and point you in the right direction.
+              <strong className="text-dark-800">If we&apos;re not the right fit, that&apos;s okay too.</strong> We&apos;ll provide recommendations and point you in the right direction.
             </p>
           </AnimatedSection>
         </div>
@@ -535,7 +535,7 @@ export default function ContactPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up" className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-dark-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-4">
               Markets We Serve
             </h2>
             <p className="text-xl text-gray-600">
@@ -546,8 +546,8 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
             {serviceAreas.map((area, index) => (
               <AnimatedSection key={area.region} animation="fade-up" delay={index * 100}>
-                <div className="bg-aios-light-grey rounded-xl p-6">
-                  <h3 className="text-xl font-bold text-dark-900 mb-4">{area.region}</h3>
+                <div className="bg-sand-100 rounded-xl p-6">
+                  <h3 className="text-xl font-bold text-dark-800 mb-4">{area.region}</h3>
                   <ul className="space-y-2">
                     {area.cities.map(city => (
                       <li key={city} className="flex items-center gap-2 text-gray-600">
@@ -565,7 +565,7 @@ export default function ContactPage() {
           </div>
 
           <AnimatedSection animation="fade-up">
-            <div className="bg-dark-950 text-white rounded-xl p-8 text-center max-w-2xl mx-auto">
+            <div className="bg-dark-800 text-white rounded-xl p-8 text-center max-w-2xl mx-auto">
               <h3 className="text-xl font-bold mb-3">Expanding to New Markets</h3>
               <p className="text-gray-300">
                 We&apos;re actively exploring partnerships in additional markets. If you&apos;re outside our current service areas but think AIOS could be a fit, reach out anyway — we&apos;re open to expansion.
@@ -576,10 +576,10 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-aios-light-grey">
+      <section className="py-20 bg-sand-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up" className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-dark-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-4">
               Common Questions Before You Reach Out
             </h2>
           </AnimatedSection>
@@ -588,7 +588,7 @@ export default function ContactPage() {
             {faqs.map((faq, index) => (
               <AnimatedSection key={index} animation="fade-up" delay={index * 50}>
                 <div className="bg-white rounded-xl p-6 shadow-sm">
-                  <h3 className="text-lg font-bold text-dark-900 mb-2">{faq.q}</h3>
+                  <h3 className="text-lg font-bold text-dark-800 mb-2">{faq.q}</h3>
                   <p className="text-gray-600">{faq.a}</p>
                 </div>
               </AnimatedSection>
@@ -601,7 +601,7 @@ export default function ContactPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up" className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-dark-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-4">
               Get in Touch Directly
             </h2>
             <p className="text-xl text-gray-600">
@@ -611,31 +611,31 @@ export default function ContactPage() {
 
           <AnimatedSection animation="fade-up">
             <div className="grid sm:grid-cols-3 gap-8 text-center">
-              <div className="bg-aios-light-grey rounded-xl p-6">
+              <div className="bg-sand-100 rounded-xl p-6">
                 <div className="w-12 h-12 bg-primary-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <h3 className="font-bold text-dark-900 mb-1">Email</h3>
+                <h3 className="font-bold text-dark-800 mb-1">Email</h3>
                 <p className="text-gray-600">hello@aios.llc</p>
               </div>
-              <div className="bg-aios-light-grey rounded-xl p-6">
+              <div className="bg-sand-100 rounded-xl p-6">
                 <div className="w-12 h-12 bg-primary-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
-                <h3 className="font-bold text-dark-900 mb-1">Phone</h3>
+                <h3 className="font-bold text-dark-800 mb-1">Phone</h3>
                 <p className="text-gray-600">Coming soon</p>
               </div>
-              <div className="bg-aios-light-grey rounded-xl p-6">
+              <div className="bg-sand-100 rounded-xl p-6">
                 <div className="w-12 h-12 bg-primary-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="font-bold text-dark-900 mb-1">Office Hours</h3>
+                <h3 className="font-bold text-dark-800 mb-1">Office Hours</h3>
                 <p className="text-gray-600">Mon-Fri, 9AM-6PM PST</p>
               </div>
             </div>
@@ -644,7 +644,7 @@ export default function ContactPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-dark-950 text-white">
+      <section className="py-20 bg-dark-800 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection animation="fade-up">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
@@ -657,7 +657,7 @@ export default function ContactPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#schedule"
-                className="bg-primary-600 text-dark-950 px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary-500 transition-all hover:scale-105"
+                className="bg-primary-600 text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary-500 transition-all hover:scale-105"
               >
                 Schedule Free Consultation
               </a>

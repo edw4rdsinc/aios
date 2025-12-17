@@ -44,18 +44,18 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-8">
-            <Link href="/auto" className="text-dark-900 hover:text-primary-600 transition-colors font-medium">
+            <Link href="/auto" className="text-dark-800 hover:text-primary-600 transition-colors font-medium">
               AIOS Auto
             </Link>
-            <Link href="/home-services" className="text-dark-900 hover:text-primary-600 transition-colors font-medium">
+            <Link href="/home-services" className="text-dark-800 hover:text-primary-600 transition-colors font-medium">
               AIOS Home
             </Link>
-            <Link href="/about" className="text-dark-900 hover:text-primary-600 transition-colors font-medium">
+            <Link href="/about" className="text-dark-800 hover:text-primary-600 transition-colors font-medium">
               About
             </Link>
             <Link
               href="/contact"
-              className="rounded-md bg-primary-600 px-6 py-2 text-sm font-semibold text-dark-950 shadow-sm hover:bg-primary-500 transition-colors"
+              className="rounded-md bg-primary-600 px-6 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-500 transition-colors"
             >
               Get Started
             </Link>

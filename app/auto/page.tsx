@@ -31,7 +31,7 @@ export default function AutoPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative bg-dark-950 text-white py-20 overflow-hidden">
+      <section className="relative bg-dark-800 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: `linear-gradient(rgba(0, 255, 65, 0.1) 1px, transparent 1px),
@@ -56,7 +56,7 @@ export default function AutoPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/contact"
-                  className="bg-primary-500 text-dark-950 px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary-400 transition-all hover:scale-105 text-center"
+                  className="bg-primary-500 text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary-400 transition-all hover:scale-105 text-center"
                 >
                   Get Started Free
                 </Link>
@@ -76,7 +76,7 @@ export default function AutoPage() {
       <section id="services" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up" className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-dark-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-4">
               Auto Services We Market
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -87,13 +87,13 @@ export default function AutoPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Auto Glass */}
             <AnimatedSection animation="fade-up" delay={100}>
-              <div id="auto-glass" className="bg-aios-light-grey rounded-xl p-8 h-full">
+              <div id="auto-glass" className="bg-sand-100 rounded-xl p-8 h-full">
                 <div className="w-14 h-14 bg-primary-500/10 rounded-xl flex items-center justify-center mb-6">
                   <svg className="w-7 h-7 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-dark-900 mb-4">Auto Glass &amp; Windshield</h3>
+                <h3 className="text-2xl font-bold text-dark-800 mb-4">Auto Glass &amp; Windshield</h3>
                 <p className="text-gray-600 mb-6">
                   Retail windshield replacements, chip repairs, and commercial fleet accounts. We drive customers searching for &quot;windshield replacement near me&quot; directly to you.
                 </p>
@@ -125,13 +125,13 @@ export default function AutoPage() {
 
             {/* PDR */}
             <AnimatedSection animation="fade-up" delay={200}>
-              <div id="pdr" className="bg-aios-light-grey rounded-xl p-8 h-full">
+              <div id="pdr" className="bg-sand-100 rounded-xl p-8 h-full">
                 <div className="w-14 h-14 bg-primary-500/10 rounded-xl flex items-center justify-center mb-6">
                   <svg className="w-7 h-7 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-dark-900 mb-4">Paintless Dent Repair</h3>
+                <h3 className="text-2xl font-bold text-dark-800 mb-4">Paintless Dent Repair</h3>
                 <p className="text-gray-600 mb-6">
                   High-margin PDR work from retail customers and fleet accounts. We position you as the trusted dent expert in your market.
                 </p>
@@ -163,14 +163,14 @@ export default function AutoPage() {
 
             {/* Mobile Mechanic */}
             <AnimatedSection animation="fade-up" delay={300}>
-              <div id="mobile-mechanic" className="bg-aios-light-grey rounded-xl p-8 h-full">
+              <div id="mobile-mechanic" className="bg-sand-100 rounded-xl p-8 h-full">
                 <div className="w-14 h-14 bg-primary-500/10 rounded-xl flex items-center justify-center mb-6">
                   <svg className="w-7 h-7 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-dark-900 mb-4">Mobile Mechanics</h3>
+                <h3 className="text-2xl font-bold text-dark-800 mb-4">Mobile Mechanics</h3>
                 <p className="text-gray-600 mb-6">
                   Customers want convenience. We connect you with people searching for mechanics who come to them.
                 </p>
@@ -204,7 +204,7 @@ export default function AutoPage() {
       </section>
 
       {/* Fleet Accounts Section */}
-      <section id="fleet" className="py-20 bg-dark-950 text-white">
+      <section id="fleet" className="py-20 bg-dark-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <AnimatedSection animation="slide-right">
@@ -226,7 +226,7 @@ export default function AutoPage() {
                 ].map((item, index) => (
                   <li key={index} className="flex items-center">
                     <div className="w-8 h-8 bg-primary-500 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                      <svg className="w-4 h-4 text-dark-950" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
@@ -281,7 +281,7 @@ export default function AutoPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up" className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-dark-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-4">
               What AIOS Auto Provides
             </h2>
             <p className="text-xl text-gray-600">
@@ -306,7 +306,7 @@ export default function AutoPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-dark-900 mb-1">{item.title}</h3>
+                    <h3 className="font-bold text-dark-800 mb-1">{item.title}</h3>
                     <p className="text-gray-600 text-sm">{item.desc}</p>
                   </div>
                 </div>
@@ -317,7 +317,7 @@ export default function AutoPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-dark-950 text-white">
+      <section className="py-20 bg-dark-800 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection animation="fade-up">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
@@ -329,7 +329,7 @@ export default function AutoPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="bg-primary-500 text-dark-950 px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary-400 transition-all hover:scale-105"
+                className="bg-primary-500 text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary-400 transition-all hover:scale-105"
               >
                 Schedule Free Consultation
               </Link>

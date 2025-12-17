@@ -34,7 +34,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
       {/* Menu Panel */}
       <div className="fixed inset-y-0 right-0 w-full max-w-sm bg-white shadow-xl">
         <div className="flex items-center justify-between p-4 border-b">
-          <span className="text-lg font-semibold text-dark-900">Menu</span>
+          <span className="text-lg font-semibold text-dark-800">Menu</span>
           <button
             type="button"
             className="p-2 text-gray-500 hover:text-gray-700 rounded-md"
@@ -50,21 +50,21 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
         <nav className="p-4 space-y-4">
           <Link
             href="/auto"
-            className="block py-3 px-4 text-lg font-medium text-dark-900 hover:bg-primary-50 hover:text-primary-700 rounded-lg transition-colors"
+            className="block py-3 px-4 text-lg font-medium text-dark-800 hover:bg-primary-50 hover:text-primary-700 rounded-lg transition-colors"
             onClick={onClose}
           >
             AIOS Auto
           </Link>
           <Link
             href="/home-services"
-            className="block py-3 px-4 text-lg font-medium text-dark-900 hover:bg-primary-50 hover:text-primary-700 rounded-lg transition-colors"
+            className="block py-3 px-4 text-lg font-medium text-dark-800 hover:bg-primary-50 hover:text-primary-700 rounded-lg transition-colors"
             onClick={onClose}
           >
             AIOS Home
           </Link>
           <Link
             href="/about"
-            className="block py-3 px-4 text-lg font-medium text-dark-900 hover:bg-primary-50 hover:text-primary-700 rounded-lg transition-colors"
+            className="block py-3 px-4 text-lg font-medium text-dark-800 hover:bg-primary-50 hover:text-primary-700 rounded-lg transition-colors"
             onClick={onClose}
           >
             About

@@ -24,12 +24,12 @@ export default function HomePage() {
       <StructuredData type="organization" />
 
       {/* Hero Section */}
-      <section className="relative bg-dark-950 text-white min-h-[70vh] flex items-center overflow-hidden">
+      <section className="relative bg-dark-800 text-white min-h-[70vh] flex items-center overflow-hidden">
         {/* Subtle grid pattern background */}
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0" style={{
-            backgroundImage: `linear-gradient(rgba(0, 255, 65, 0.1) 1px, transparent 1px),
-                              linear-gradient(90deg, rgba(0, 255, 65, 0.1) 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(rgba(168, 218, 220, 0.15) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(168, 218, 220, 0.15) 1px, transparent 1px)`,
             backgroundSize: '50px 50px'
           }} />
         </div>
@@ -50,7 +50,7 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/contact"
-                  className="bg-primary-500 text-dark-950 px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary-400 transition-all hover:scale-105 hover:shadow-lg hover:shadow-primary-500/20 text-center"
+                  className="bg-primary-500 text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary-400 transition-all hover:scale-105 hover:shadow-lg hover:shadow-primary-500/20 text-center"
                 >
                   Schedule Free Consultation
                 </Link>
@@ -73,7 +73,7 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up" className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-dark-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-4">
               Which Industry Are You In?
             </h2>
             <p className="text-xl text-gray-600">
@@ -85,7 +85,7 @@ export default function HomePage() {
             {/* AIOS Auto */}
             <AnimatedSection animation="fade-up" delay={100}>
               <Link href="/auto" className="block group">
-                <div className="bg-dark-950 rounded-xl p-8 h-full border-2 border-transparent hover:border-primary-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-500/10">
+                <div className="bg-dark-800 rounded-xl p-8 h-full border-2 border-transparent hover:border-primary-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-500/10">
                   <div className="w-16 h-16 bg-primary-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary-500/20 transition-colors">
                     <svg className="w-8 h-8 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h8m0 0l-4-4m4 4l-4 4m-4 6h8m0 0l-4 4m4-4l-4-4" />
@@ -111,7 +111,7 @@ export default function HomePage() {
             {/* AIOS Home */}
             <AnimatedSection animation="fade-up" delay={200}>
               <Link href="/home-services" className="block group">
-                <div className="bg-dark-950 rounded-xl p-8 h-full border-2 border-transparent hover:border-primary-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-500/10">
+                <div className="bg-dark-800 rounded-xl p-8 h-full border-2 border-transparent hover:border-primary-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-500/10">
                   <div className="w-16 h-16 bg-primary-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary-500/20 transition-colors">
                     <svg className="w-8 h-8 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -138,27 +138,27 @@ export default function HomePage() {
       </section>
 
       {/* The Problem Section */}
-      <section className="py-20 bg-aios-light-grey">
+      <section className="py-20 bg-sand-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up" className="text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-dark-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-6">
               You&apos;re Great at Your Trade. But Finding Customers Shouldn&apos;t Be This Hard.
             </h2>
             <div className="text-left space-y-4 text-lg text-gray-600">
               <p>
-                <strong className="text-dark-900">You&apos;re too busy to do marketing.</strong> Between jobs, customer calls, and managing operations, there&apos;s no time left for building a marketing engine.
+                <strong className="text-dark-800">You&apos;re too busy to do marketing.</strong> Between jobs, customer calls, and managing operations, there&apos;s no time left for building a marketing engine.
               </p>
               <p>
-                <strong className="text-dark-900">Traditional agencies are too expensive.</strong> $2,000-$10,000/month retainers with no guarantee of results? That&apos;s not sustainable for a small business.
+                <strong className="text-dark-800">Traditional agencies are too expensive.</strong> $2,000-$10,000/month retainers with no guarantee of results? That&apos;s not sustainable for a small business.
               </p>
               <p>
-                <strong className="text-dark-900">Lead services waste your time.</strong> You&apos;re paying for leads that are shared with 5 other competitors. Most don&apos;t convert, and you&apos;re just throwing money away.
+                <strong className="text-dark-800">Lead services waste your time.</strong> You&apos;re paying for leads that are shared with 5 other competitors. Most don&apos;t convert, and you&apos;re just throwing money away.
               </p>
               <p>
-                <strong className="text-dark-900">You rely on word-of-mouth.</strong> It got you this far, but you&apos;re stuck. You can&apos;t scale beyond your immediate network.
+                <strong className="text-dark-800">You rely on word-of-mouth.</strong> It got you this far, but you&apos;re stuck. You can&apos;t scale beyond your immediate network.
               </p>
             </div>
-            <p className="text-xl font-semibold text-dark-900 mt-8">
+            <p className="text-xl font-semibold text-dark-800 mt-8">
               The truth is: You need customers, not complexity. You need a partner who only wins when you win.
             </p>
           </AnimatedSection>
@@ -169,7 +169,7 @@ export default function HomePage() {
       <section id="how-it-works" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up" className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-dark-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-4">
               Introducing AIOS: Your Partner That Only Gets Paid When You Do
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -183,7 +183,7 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-primary-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-primary-600">$0</span>
                 </div>
-                <h3 className="text-xl font-bold text-dark-900 mb-2">Zero Upfront Cost</h3>
+                <h3 className="text-xl font-bold text-dark-800 mb-2">Zero Upfront Cost</h3>
                 <p className="text-gray-600">No retainers. No monthly fees. No contracts locking you in. You pay nothing until we deliver results.</p>
               </div>
             </AnimatedSection>
@@ -193,7 +193,7 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-primary-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-primary-600">%</span>
                 </div>
-                <h3 className="text-xl font-bold text-dark-900 mb-2">Commission Model</h3>
+                <h3 className="text-xl font-bold text-dark-800 mb-2">Commission Model</h3>
                 <p className="text-gray-600">We earn a commission on sales we generate for you. That&apos;s it. If we don&apos;t bring you customers, we don&apos;t get paid.</p>
               </div>
             </AnimatedSection>
@@ -205,7 +205,7 @@ export default function HomePage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-dark-900 mb-2">Full-Service Marketing</h3>
+                <h3 className="text-xl font-bold text-dark-800 mb-2">Full-Service Marketing</h3>
                 <p className="text-gray-600">We build your website, create content, run ads, manage leads, and optimize everything for results.</p>
               </div>
             </AnimatedSection>
@@ -217,7 +217,7 @@ export default function HomePage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-dark-900 mb-2">Proven Systems</h3>
+                <h3 className="text-xl font-bold text-dark-800 mb-2">Proven Systems</h3>
                 <p className="text-gray-600">GEO optimization, AI-powered content, podcasts, and social media to put you in front of customers searching for your services.</p>
               </div>
             </AnimatedSection>
@@ -232,7 +232,7 @@ export default function HomePage() {
       </section>
 
       {/* How It Works Steps */}
-      <section className="py-20 bg-dark-950 text-white">
+      <section className="py-20 bg-dark-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up" className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
@@ -254,7 +254,7 @@ export default function HomePage() {
               <AnimatedSection key={item.step} animation="fade-up" delay={index * 100}>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-xl font-bold text-dark-950">{item.step}</span>
+                    <span className="text-xl font-bold text-white">{item.step}</span>
                   </div>
                   <h3 className="text-lg font-bold mb-2">{item.title}</h3>
                   <p className="text-gray-400 text-sm">{item.desc}</p>
@@ -269,7 +269,7 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up" className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-dark-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-4">
               Why Service Businesses Choose AIOS
             </h2>
           </AnimatedSection>
@@ -284,13 +284,13 @@ export default function HomePage() {
               { title: 'Ongoing Optimization', desc: 'We don\'t just set it and forget it. We continuously test, refine, and improve your campaigns to maximize results.' },
             ].map((item, index) => (
               <AnimatedSection key={item.title} animation="fade-up" delay={index * 100}>
-                <div className="bg-aios-light-grey rounded-xl p-6 h-full hover:shadow-lg transition-shadow">
+                <div className="bg-sand-100 rounded-xl p-6 h-full hover:shadow-lg transition-shadow">
                   <div className="w-10 h-10 bg-primary-500/10 rounded-lg flex items-center justify-center mb-4">
                     <svg className="w-5 h-5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-dark-900 mb-2">{item.title}</h3>
+                  <h3 className="text-xl font-bold text-dark-800 mb-2">{item.title}</h3>
                   <p className="text-gray-600">{item.desc}</p>
                 </div>
               </AnimatedSection>
@@ -300,10 +300,10 @@ export default function HomePage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-aios-light-grey">
+      <section className="py-20 bg-sand-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up" className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-dark-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-4">
               Frequently Asked Questions
             </h2>
           </AnimatedSection>
@@ -318,7 +318,7 @@ export default function HomePage() {
             ].map((item, index) => (
               <AnimatedSection key={index} animation="fade-up" delay={index * 100}>
                 <div className="bg-white rounded-xl p-6 shadow-sm">
-                  <h3 className="text-lg font-bold text-dark-900 mb-2">{item.q}</h3>
+                  <h3 className="text-lg font-bold text-dark-800 mb-2">{item.q}</h3>
                   <p className="text-gray-600">{item.a}</p>
                 </div>
               </AnimatedSection>
@@ -328,7 +328,7 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-dark-950 text-white">
+      <section className="py-20 bg-dark-800 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection animation="fade-up">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
@@ -343,7 +343,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="bg-primary-500 text-dark-950 px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary-400 transition-all hover:scale-105 hover:shadow-lg hover:shadow-primary-500/20"
+                className="bg-primary-500 text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary-400 transition-all hover:scale-105 hover:shadow-lg hover:shadow-primary-500/20"
               >
                 Schedule Free Consultation
               </Link>

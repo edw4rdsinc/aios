@@ -21,7 +21,7 @@ export default function AboutPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-dark-950 text-white py-20 overflow-hidden">
+      <section className="relative bg-dark-800 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: `linear-gradient(rgba(0, 255, 65, 0.1) 1px, transparent 1px),
@@ -49,18 +49,18 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up">
-            <h2 className="text-3xl sm:text-4xl font-bold text-dark-900 mb-8 text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-8 text-center">
               Our Story
             </h2>
             <div className="prose prose-lg max-w-none text-gray-600">
               <p className="text-xl leading-relaxed mb-6">
-                AIOS—Authentic Intelligence Operating System—started with a simple observation: <strong className="text-dark-900">service business owners are great at what they do, but terrible at marketing.</strong> Not because they lack intelligence or work ethic, but because they&apos;re too busy actually doing the work.
+                AIOS—Authentic Intelligence Operating System—started with a simple observation: <strong className="text-dark-800">service business owners are great at what they do, but terrible at marketing.</strong> Not because they lack intelligence or work ethic, but because they&apos;re too busy actually doing the work.
               </p>
               <p className="text-lg leading-relaxed mb-6">
                 We saw talented auto glass technicians, skilled PDR specialists, and reliable handymen struggling to grow their businesses. They were spending thousands on marketing agencies that promised the world and delivered nothing. They were buying shared leads that went nowhere. They were watching competitors with worse service steal customers simply because those competitors had a marketing budget.
               </p>
               <p className="text-lg leading-relaxed mb-6">
-                So we asked ourselves: <strong className="text-dark-900">What if we built an agency that only gets paid when our partners get paid?</strong>
+                So we asked ourselves: <strong className="text-dark-800">What if we built an agency that only gets paid when our partners get paid?</strong>
               </p>
               <p className="text-lg leading-relaxed">
                 That&apos;s AIOS. Zero upfront cost. Commission only on sales we generate. Complete alignment between our success and yours.
@@ -71,10 +71,10 @@ export default function AboutPage() {
       </section>
 
       {/* Our Values */}
-      <section className="py-20 bg-aios-light-grey">
+      <section className="py-20 bg-sand-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up" className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-dark-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-4">
               What We Believe
             </h2>
           </AnimatedSection>
@@ -131,7 +131,7 @@ export default function AboutPage() {
                       {value.icon}
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-dark-900 mb-2">{value.title}</h3>
+                  <h3 className="text-xl font-bold text-dark-800 mb-2">{value.title}</h3>
                   <p className="text-gray-600">{value.desc}</p>
                 </div>
               </AnimatedSection>
@@ -144,7 +144,7 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up" className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-dark-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-4">
               Meet the Team
             </h2>
             <p className="text-xl text-gray-600">
@@ -155,11 +155,11 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Samuel Edwards */}
             <AnimatedSection animation="fade-up" delay={100}>
-              <div className="bg-aios-light-grey rounded-xl p-8">
+              <div className="bg-sand-100 rounded-xl p-8">
                 <div className="w-24 h-24 bg-dark-900 rounded-full flex items-center justify-center mb-6 mx-auto">
                   <span className="text-3xl font-bold text-primary-500">SE</span>
                 </div>
-                <h3 className="text-2xl font-bold text-dark-900 mb-2 text-center">Samuel Edwards</h3>
+                <h3 className="text-2xl font-bold text-dark-800 mb-2 text-center">Samuel Edwards</h3>
                 <p className="text-primary-600 font-medium mb-4 text-center">Co-Founder, The Reconstructionists</p>
                 <p className="text-gray-600">
                   Sam brings a unique combination of technical expertise and marketing intelligence to AIOS. With a background in software development and digital strategy, he architects the systems that power AIOS&apos;s GEO optimization and lead generation engines. He believes technology should serve people, not the other way around.
@@ -169,11 +169,11 @@ export default function AboutPage() {
 
             {/* Miguel Villahermosa */}
             <AnimatedSection animation="fade-up" delay={200}>
-              <div className="bg-aios-light-grey rounded-xl p-8">
+              <div className="bg-sand-100 rounded-xl p-8">
                 <div className="w-24 h-24 bg-dark-900 rounded-full flex items-center justify-center mb-6 mx-auto">
                   <span className="text-3xl font-bold text-primary-500">MV</span>
                 </div>
-                <h3 className="text-2xl font-bold text-dark-900 mb-2 text-center">Miguel Villahermosa</h3>
+                <h3 className="text-2xl font-bold text-dark-800 mb-2 text-center">Miguel Villahermosa</h3>
                 <p className="text-primary-600 font-medium mb-4 text-center">Co-Founder</p>
                 <p className="text-gray-600">
                   Miguel understands service businesses from the inside out. His hands-on experience in the auto service industry—combined with a relentless focus on customer acquisition—drives AIOS&apos;s partner success. He&apos;s the voice on the other end of the phone, the face on the podcast, and the person who makes sure partners get results.
@@ -185,7 +185,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why We&apos;re Different */}
-      <section className="py-20 bg-dark-950 text-white">
+      <section className="py-20 bg-dark-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up" className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
@@ -231,7 +231,7 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection animation="fade-up">
-            <h2 className="text-3xl sm:text-4xl font-bold text-dark-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-4">
               Ready to Partner with AIOS?
             </h2>
             <p className="text-xl text-gray-600 mb-8">
@@ -240,13 +240,13 @@ export default function AboutPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="bg-primary-600 text-dark-950 px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary-500 transition-all hover:scale-105"
+                className="bg-primary-600 text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary-500 transition-all hover:scale-105"
               >
                 Schedule Free Consultation
               </Link>
               <Link
                 href="/"
-                className="bg-transparent border-2 border-gray-300 text-dark-900 px-8 py-4 rounded-md font-semibold text-lg hover:border-primary-500 hover:text-primary-600 transition-all"
+                className="bg-transparent border-2 border-gray-300 text-dark-800 px-8 py-4 rounded-md font-semibold text-lg hover:border-primary-500 hover:text-primary-600 transition-all"
               >
                 See How It Works
               </Link>
