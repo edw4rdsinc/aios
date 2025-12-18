@@ -123,7 +123,7 @@ export default function ContactPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-dark-800 text-white py-20 overflow-hidden">
+      <section className="relative bg-sand-200 text-dark-800 py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: `linear-gradient(rgba(0, 255, 65, 0.1) 1px, transparent 1px),
@@ -565,7 +565,7 @@ export default function ContactPage() {
           </div>
 
           <AnimatedSection animation="fade-up">
-            <div className="bg-dark-800 text-white rounded-xl p-8 text-center max-w-2xl mx-auto">
+            <div className="bg-sand-200 text-dark-800 rounded-xl p-8 text-center max-w-2xl mx-auto">
               <h3 className="text-xl font-bold mb-3">Expanding to New Markets</h3>
               <p className="text-gray-300">
                 We&apos;re actively exploring partnerships in additional markets. If you&apos;re outside our current service areas but think AIOS could be a fit, reach out anyway — we&apos;re open to expansion.
@@ -644,7 +644,7 @@ export default function ContactPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-dark-800 text-white">
+      <section className="py-20 bg-sand-200 text-dark-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection animation="fade-up">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">

@@ -24,12 +24,12 @@ export default function HomePage() {
       <StructuredData type="organization" />
 
       {/* Hero Section */}
-      <section className="relative bg-dark-800 text-white min-h-[70vh] flex items-center overflow-hidden">
+      <section className="relative bg-sand-200 min-h-[70vh] flex items-center overflow-hidden">
         {/* Subtle grid pattern background */}
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-30">
           <div className="absolute inset-0" style={{
-            backgroundImage: `linear-gradient(rgba(168, 218, 220, 0.15) 1px, transparent 1px),
-                              linear-gradient(90deg, rgba(168, 218, 220, 0.15) 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.4) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(255, 255, 255, 0.4) 1px, transparent 1px)`,
             backgroundSize: '50px 50px'
           }} />
         </div>
@@ -37,31 +37,31 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
           <div className="max-w-3xl">
             <AnimatedSection animation="fade-up">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-dark-800 leading-tight">
                 Your Service Business Deserves Customers.{' '}
-                <span className="text-primary-500">Not Marketing Headaches.</span>
+                <span className="text-primary-600">Not Marketing Headaches.</span>
               </h1>
-              <p className="text-xl sm:text-2xl mb-4 text-gray-300">
-                Zero upfront cost. <span className="text-primary-400 font-semibold">Commission only on sales we generate.</span> That&apos;s it.
+              <p className="text-xl sm:text-2xl mb-4 text-dark-700">
+                Zero upfront cost. <span className="text-primary-600 font-semibold">Commission only on sales we generate.</span> That&apos;s it.
               </p>
-              <p className="text-lg mb-8 text-gray-400">
+              <p className="text-lg mb-8 text-dark-600">
                 We handle your marketing, sales, and customer acquisition so you can focus on what you do best: delivering exceptional service.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/contact"
-                  className="bg-primary-500 text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary-400 transition-all hover:scale-105 hover:shadow-lg hover:shadow-primary-500/20 text-center"
+                  className="bg-primary-500 text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary-600 transition-all hover:scale-105 hover:shadow-lg hover:shadow-primary-500/20 text-center"
                 >
                   Schedule Free Consultation
                 </Link>
                 <Link
                   href="#how-it-works"
-                  className="bg-transparent border-2 border-gray-600 text-white px-8 py-4 rounded-md font-semibold text-lg hover:border-primary-500 hover:text-primary-400 transition-all text-center"
+                  className="bg-white/80 border-2 border-dark-300 text-dark-800 px-8 py-4 rounded-md font-semibold text-lg hover:border-primary-500 hover:text-primary-600 transition-all text-center"
                 >
                   See How It Works
                 </Link>
               </div>
-              <p className="text-sm text-gray-500 mt-6">
+              <p className="text-sm text-dark-600 mt-6">
                 Trusted by service businesses in auto glass, PDR, mobile mechanics, window installation, roofing, and more.
               </p>
             </AnimatedSection>
@@ -85,20 +85,20 @@ export default function HomePage() {
             {/* AIOS Auto */}
             <AnimatedSection animation="fade-up" delay={100}>
               <Link href="/auto" className="block group">
-                <div className="bg-dark-800 rounded-xl p-8 h-full border-2 border-transparent hover:border-primary-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-500/10">
-                  <div className="w-16 h-16 bg-primary-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary-500/20 transition-colors">
-                    <svg className="w-8 h-8 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="bg-blue-300 rounded-xl p-8 h-full border-2 border-white/50 hover:border-primary-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-500/10">
+                  <div className="w-16 h-16 bg-white/30 rounded-xl flex items-center justify-center mb-6 group-hover:bg-white/50 transition-colors">
+                    <svg className="w-8 h-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h8m0 0l-4-4m4 4l-4 4m-4 6h8m0 0l-4 4m4-4l-4-4" />
                     </svg>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">AIOS Auto</h3>
-                  <ul className="text-gray-400 space-y-2 mb-6">
+                  <h3 className="text-2xl font-bold text-dark-800 mb-4">AIOS Auto</h3>
+                  <ul className="text-dark-700 space-y-2 mb-6">
                     <li>Auto Glass &amp; Windshield Repair</li>
                     <li>Paintless Dent Repair (PDR)</li>
                     <li>Mobile Mechanics</li>
                     <li>Fleet Services</li>
                   </ul>
-                  <span className="inline-flex items-center text-primary-400 font-semibold group-hover:text-primary-300 transition-colors">
+                  <span className="inline-flex items-center text-primary-600 font-semibold group-hover:text-primary-700 transition-colors">
                     Explore AIOS Auto
                     <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -111,20 +111,20 @@ export default function HomePage() {
             {/* AIOS Home */}
             <AnimatedSection animation="fade-up" delay={200}>
               <Link href="/home-services" className="block group">
-                <div className="bg-dark-800 rounded-xl p-8 h-full border-2 border-transparent hover:border-primary-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-500/10">
-                  <div className="w-16 h-16 bg-primary-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary-500/20 transition-colors">
-                    <svg className="w-8 h-8 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="bg-blue-300 rounded-xl p-8 h-full border-2 border-white/50 hover:border-primary-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-500/10">
+                  <div className="w-16 h-16 bg-white/30 rounded-xl flex items-center justify-center mb-6 group-hover:bg-white/50 transition-colors">
+                    <svg className="w-8 h-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                     </svg>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">AIOS Home</h3>
-                  <ul className="text-gray-400 space-y-2 mb-6">
+                  <h3 className="text-2xl font-bold text-dark-800 mb-4">AIOS Home</h3>
+                  <ul className="text-dark-700 space-y-2 mb-6">
                     <li>Window Installation</li>
                     <li>Roofing Services</li>
                     <li>Handyman Services</li>
                     <li>Pressure Washing</li>
                   </ul>
-                  <span className="inline-flex items-center text-primary-400 font-semibold group-hover:text-primary-300 transition-colors">
+                  <span className="inline-flex items-center text-primary-600 font-semibold group-hover:text-primary-700 transition-colors">
                     Explore AIOS Home
                     <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -232,13 +232,13 @@ export default function HomePage() {
       </section>
 
       {/* How It Works Steps */}
-      <section className="py-20 bg-dark-800 text-white">
+      <section className="py-20 bg-sand-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up" className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-4">
               How AIOS Brings You Customers
             </h2>
-            <p className="text-xl text-gray-400">
+            <p className="text-xl text-dark-600">
               Our process is simple, scalable, and designed to generate real revenue.
             </p>
           </AnimatedSection>
@@ -256,8 +256,8 @@ export default function HomePage() {
                   <div className="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-xl font-bold text-white">{item.step}</span>
                   </div>
-                  <h3 className="text-lg font-bold mb-2">{item.title}</h3>
-                  <p className="text-gray-400 text-sm">{item.desc}</p>
+                  <h3 className="text-lg font-bold text-dark-800 mb-2">{item.title}</h3>
+                  <p className="text-dark-600 text-sm">{item.desc}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -328,28 +328,28 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-dark-800 text-white">
+      <section className="py-20 bg-sand-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection animation="fade-up">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-dark-800 mb-4">
               Ready to Stop Guessing and Start Growing?
             </h2>
-            <p className="text-xl text-gray-400 mb-8">
+            <p className="text-xl text-dark-600 mb-8">
               Let&apos;s talk about your business, your goals, and how AIOS can become your customer acquisition partner.
             </p>
-            <p className="text-gray-500 mb-8">
+            <p className="text-dark-500 mb-8">
               No pressure. No obligation. Just a conversation about results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="bg-primary-500 text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary-400 transition-all hover:scale-105 hover:shadow-lg hover:shadow-primary-500/20"
+                className="bg-primary-500 text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary-600 transition-all hover:scale-105 hover:shadow-lg hover:shadow-primary-500/20"
               >
                 Schedule Free Consultation
               </Link>
               <Link
                 href="/auto"
-                className="bg-transparent border-2 border-gray-600 text-white px-8 py-4 rounded-md font-semibold text-lg hover:border-primary-500 hover:text-primary-400 transition-all"
+                className="bg-white/80 border-2 border-dark-300 text-dark-800 px-8 py-4 rounded-md font-semibold text-lg hover:border-primary-500 hover:text-primary-600 transition-all"
               >
                 Learn More About AIOS Auto
               </Link>

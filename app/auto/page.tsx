@@ -31,7 +31,7 @@ export default function AutoPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative bg-dark-800 text-white py-20 overflow-hidden">
+      <section className="relative bg-sand-200 text-dark-800 py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: `linear-gradient(rgba(0, 255, 65, 0.1) 1px, transparent 1px),
@@ -204,7 +204,7 @@ export default function AutoPage() {
       </section>
 
       {/* Fleet Accounts Section */}
-      <section id="fleet" className="py-20 bg-dark-800 text-white">
+      <section id="fleet" className="py-20 bg-sand-200 text-dark-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <AnimatedSection animation="slide-right">
@@ -245,7 +245,7 @@ export default function AutoPage() {
                       <span className="text-gray-400">Single Fleet Contract</span>
                       <span className="text-primary-400 font-bold">$50K-$200K/year</span>
                     </div>
-                    <div className="w-full bg-dark-800 rounded-full h-2">
+                    <div className="w-full bg-sand-200 rounded-full h-2">
                       <div className="bg-primary-500 h-2 rounded-full" style={{ width: '80%' }}></div>
                     </div>
                   </div>
@@ -254,7 +254,7 @@ export default function AutoPage() {
                       <span className="text-gray-400">Your Revenue (After Commission)</span>
                       <span className="text-white font-bold">$45K-$180K/year</span>
                     </div>
-                    <div className="w-full bg-dark-800 rounded-full h-2">
+                    <div className="w-full bg-sand-200 rounded-full h-2">
                       <div className="bg-white h-2 rounded-full" style={{ width: '90%' }}></div>
                     </div>
                   </div>
@@ -263,7 +263,7 @@ export default function AutoPage() {
                       <span className="text-gray-400">AIOS Commission</span>
                       <span className="text-gray-400 font-bold">Varies by agreement</span>
                     </div>
-                    <div className="w-full bg-dark-800 rounded-full h-2">
+                    <div className="w-full bg-sand-200 rounded-full h-2">
                       <div className="bg-gray-600 h-2 rounded-full" style={{ width: '10%' }}></div>
                     </div>
                   </div>
@@ -317,7 +317,7 @@ export default function AutoPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-dark-800 text-white">
+      <section className="py-20 bg-sand-200 text-dark-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection animation="fade-up">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
