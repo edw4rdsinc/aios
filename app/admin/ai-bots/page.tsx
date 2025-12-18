@@ -59,30 +59,46 @@ export default function AIBotsPage() {
           break
       }
 
-      let url = `${SUPABASE_URL}/rest/v1/ai_bot_visits?select=*&timestamp=gte.${startDate.toISOString()}&order=timestamp.desc&limit=100000`
+      // Paginate through all results (Supabase caps at 1000 per request)
+      const allData: BotVisit[] = []
+      const pageSize = 1000
+      let offset = 0
+      let hasMore = true
 
-      if (selectedSite !== 'all') {
-        url += `&site=eq.${selectedSite}`
+      while (hasMore) {
+        let url = `${SUPABASE_URL}/rest/v1/ai_bot_visits?select=*&timestamp=gte.${startDate.toISOString()}&order=timestamp.desc&limit=${pageSize}&offset=${offset}`
+
+        if (selectedSite !== 'all') {
+          url += `&site=eq.${selectedSite}`
+        }
+
+        const response = await fetch(url, {
+          headers: {
+            'apikey': SUPABASE_ANON_KEY,
+            'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+          },
+        })
+
+        if (!response.ok) {
+          throw new Error(`Failed to fetch: ${response.status}`)
+        }
+
+        const data: BotVisit[] = await response.json()
+        allData.push(...data)
+
+        if (data.length < pageSize) {
+          hasMore = false
+        } else {
+          offset += pageSize
+        }
       }
 
-      const response = await fetch(url, {
-        headers: {
-          'apikey': SUPABASE_ANON_KEY,
-          'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
-        },
-      })
-
-      if (!response.ok) {
-        throw new Error(`Failed to fetch: ${response.status}`)
-      }
-
-      const data: BotVisit[] = await response.json()
-      setVisits(data)
+      setVisits(allData)
 
       // Calculate stats by site
       const siteMap = new Map<string, SiteStats>()
 
-      for (const visit of data) {
+      for (const visit of allData) {
         if (!siteMap.has(visit.site)) {
           siteMap.set(visit.site, { site: visit.site, total: 0, bots: {} })
         }
