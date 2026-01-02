@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import AnimatedSection from '@/components/shared/AnimatedSection'
+import StructuredData from '@/components/seo/StructuredData'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -20,6 +21,14 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div>
+      <StructuredData
+        type="breadcrumb"
+        items={[
+          { name: 'Home', url: 'https://aios.llc' },
+          { name: 'About', url: 'https://aios.llc/about' },
+        ]}
+      />
+
       {/* Hero Section */}
       <section className="relative bg-sand-200 text-dark-800 py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-5">

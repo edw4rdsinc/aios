@@ -29,6 +29,13 @@ export default function HomeServicesPage() {
           serviceType: 'Marketing Services',
         }}
       />
+      <StructuredData
+        type="breadcrumb"
+        items={[
+          { name: 'Home', url: 'https://aios.llc' },
+          { name: 'Home Services', url: 'https://aios.llc/home-services' },
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-sand-200 text-dark-800 py-20 overflow-hidden">

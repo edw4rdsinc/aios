@@ -1,9 +1,15 @@
-interface StructuredDataProps {
-  type: 'organization' | 'localBusiness' | 'service'
-  data?: Record<string, unknown>
+interface BreadcrumbItem {
+  name: string
+  url: string
 }
 
-export default function StructuredData({ type, data }: StructuredDataProps) {
+interface StructuredDataProps {
+  type: 'organization' | 'localBusiness' | 'service' | 'breadcrumb'
+  data?: Record<string, unknown>
+  items?: BreadcrumbItem[]
+}
+
+export default function StructuredData({ type, data, items }: StructuredDataProps) {
   const getStructuredData = () => {
     switch (type) {
       case 'organization':
@@ -42,6 +48,17 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
             name: 'AIOS LLC',
           },
           ...data,
+        }
+      case 'breadcrumb':
+        return {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: items?.map((item, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            name: item.name,
+            item: item.url,
+          })) || [],
         }
       default:
         return {}

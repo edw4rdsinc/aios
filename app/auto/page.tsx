@@ -29,6 +29,13 @@ export default function AutoPage() {
           serviceType: 'Marketing Services',
         }}
       />
+      <StructuredData
+        type="breadcrumb"
+        items={[
+          { name: 'Home', url: 'https://aios.llc' },
+          { name: 'Auto', url: 'https://aios.llc/auto' },
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-sand-200 text-dark-800 py-20 overflow-hidden">

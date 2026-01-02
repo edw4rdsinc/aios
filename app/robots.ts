@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 
+// AI/LLM crawlers: See /llms.txt for detailed business information
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
