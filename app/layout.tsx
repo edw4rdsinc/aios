@@ -41,11 +41,20 @@ export const metadata: Metadata = {
     siteName: 'AIOS',
     title: 'AIOS | Commission-Based Marketing for Service Businesses',
     description: 'Zero upfront cost, commission only on sales we generate. We only win when you win.',
+    images: [
+      {
+        url: '/images/aios-wm.png',
+        width: 1200,
+        height: 630,
+        alt: 'AIOS - Commission-Based Marketing for Service Businesses',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AIOS | Marketing That Only Wins When You Win',
     description: 'Commission-based marketing for auto and home service businesses.',
+    images: ['/images/aios-wm.png'],
   },
 }
 
