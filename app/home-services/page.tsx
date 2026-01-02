@@ -12,6 +12,20 @@ export const metadata: Metadata = {
     url: 'https://aios.llc/home-services',
     siteName: 'AIOS',
     type: 'website',
+    images: [
+      {
+        url: 'https://aios.llc/images/aios-wm.png',
+        width: 1200,
+        height: 630,
+        alt: 'AIOS Home - Marketing for Window, Roofing & Handyman Services',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AIOS Home | Marketing for Window, Roofing & Handyman Services',
+    description: 'Zero upfront cost marketing for home service businesses. We only get paid when you get paid.',
+    images: ['https://aios.llc/images/aios-wm.png'],
   },
   alternates: {
     canonical: 'https://aios.llc/home-services',

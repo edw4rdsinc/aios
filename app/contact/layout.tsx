@@ -84,6 +84,20 @@ export const metadata: Metadata = {
     url: 'https://aios.llc/contact',
     siteName: 'AIOS',
     type: 'website',
+    images: [
+      {
+        url: 'https://aios.llc/images/aios-wm.png',
+        width: 1200,
+        height: 630,
+        alt: 'Contact AIOS - Commission-Based Marketing Agency',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact AIOS - Schedule Free Consultation',
+    description: 'Free consultation for commission-based marketing. No upfront costs. We only win when you win.',
+    images: ['https://aios.llc/images/aios-wm.png'],
   },
   alternates: {
     canonical: 'https://aios.llc/contact',

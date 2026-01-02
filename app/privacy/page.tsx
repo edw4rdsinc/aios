@@ -3,6 +3,30 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Privacy Policy | AIOS',
   description: 'Privacy policy for AIOS LLC marketing services.',
+  openGraph: {
+    title: 'Privacy Policy | AIOS',
+    description: 'Privacy policy for AIOS LLC marketing services.',
+    url: 'https://aios.llc/privacy',
+    siteName: 'AIOS',
+    type: 'website',
+    images: [
+      {
+        url: 'https://aios.llc/images/aios-wm.png',
+        width: 1200,
+        height: 630,
+        alt: 'AIOS Privacy Policy',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy Policy | AIOS',
+    description: 'Privacy policy for AIOS LLC marketing services.',
+    images: ['https://aios.llc/images/aios-wm.png'],
+  },
+  alternates: {
+    canonical: 'https://aios.llc/privacy',
+  },
 }
 
 export default function PrivacyPage() {

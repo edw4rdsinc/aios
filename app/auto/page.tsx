@@ -12,6 +12,20 @@ export const metadata: Metadata = {
     url: 'https://aios.llc/auto',
     siteName: 'AIOS',
     type: 'website',
+    images: [
+      {
+        url: 'https://aios.llc/images/aios-wm.png',
+        width: 1200,
+        height: 630,
+        alt: 'AIOS Auto - Marketing for Auto Glass, PDR & Mobile Mechanics',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AIOS Auto | Marketing for Auto Glass, PDR & Mobile Mechanics',
+    description: 'Zero upfront cost marketing for auto service businesses. We only get paid when you get paid.',
+    images: ['https://aios.llc/images/aios-wm.png'],
   },
   alternates: {
     canonical: 'https://aios.llc/auto',

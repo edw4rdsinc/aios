@@ -60,6 +60,20 @@ export const metadata: Metadata = {
     url: 'https://aios.llc',
     siteName: 'AIOS',
     type: 'website',
+    images: [
+      {
+        url: 'https://aios.llc/images/aios-wm.png',
+        width: 1200,
+        height: 630,
+        alt: 'AIOS - Commission-Based Marketing for Service Businesses',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AIOS | Zero-Cost Marketing for Auto & Home Service Businesses',
+    description: 'Your sales & marketing partner. No upfront costs, no retainers. We earn commission only on sales we generate.',
+    images: ['https://aios.llc/images/aios-wm.png'],
   },
   alternates: {
     canonical: 'https://aios.llc',

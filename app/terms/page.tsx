@@ -3,6 +3,30 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Terms of Service | AIOS',
   description: 'Terms of service for AIOS LLC marketing services.',
+  openGraph: {
+    title: 'Terms of Service | AIOS',
+    description: 'Terms of service for AIOS LLC marketing services.',
+    url: 'https://aios.llc/terms',
+    siteName: 'AIOS',
+    type: 'website',
+    images: [
+      {
+        url: 'https://aios.llc/images/aios-wm.png',
+        width: 1200,
+        height: 630,
+        alt: 'AIOS Terms of Service',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Terms of Service | AIOS',
+    description: 'Terms of service for AIOS LLC marketing services.',
+    images: ['https://aios.llc/images/aios-wm.png'],
+  },
+  alternates: {
+    canonical: 'https://aios.llc/terms',
+  },
 }
 
 export default function TermsPage() {
