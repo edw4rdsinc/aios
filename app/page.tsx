@@ -3,6 +3,54 @@ import AnimatedSection from '@/components/shared/AnimatedSection'
 import StructuredData from '@/components/seo/StructuredData'
 import type { Metadata } from 'next'
 
+// FAQPage Schema for SEO
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I know AIOS actually generated the sale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We use custom tracking mechanisms including unique forms, dedicated tracking phone numbers, UTM codes, and analytics. Everything is transparent—you'll know exactly which customers came from AIOS."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I already have a website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Great! We can optimize your existing site or build a new one from scratch. Either way, we ensure it's set up to convert visitors into leads and track attribution properly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the commission work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We agree on a fair commission rate based on your business and margins. You pay commission on the gross sale amount from customers we generate. Simple, transparent, and customized to your business."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to see results?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It varies. Some partners see leads within 30 days. Others take 60-90 days as we build content, optimize campaigns, and gain traction. The marketing engine gets stronger over time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work with multiple businesses in the same area?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer exclusivity within your vertical and metro area. If you're our auto glass partner in Portland, we won't sign another auto glass company in Portland."
+      }
+    }
+  ]
+}
+
 export const metadata: Metadata = {
   title: 'AIOS | Zero-Cost Marketing for Auto & Home Service Businesses',
   description: 'Your sales & marketing partner. No upfront costs, no retainers. We earn commission only on sales we generate for auto glass, PDR, mobile mechanics, window installation, roofing, and handyman businesses.',
@@ -22,6 +70,10 @@ export default function HomePage() {
   return (
     <div>
       <StructuredData type="organization" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-sand-200 min-h-[70vh] flex items-center overflow-hidden">
