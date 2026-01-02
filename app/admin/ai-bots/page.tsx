@@ -27,6 +27,7 @@ export default function AIBotsPage() {
   const [error, setError] = useState<string | null>(null)
   const [selectedSite, setSelectedSite] = useState<string>('all')
   const [timeRange, setTimeRange] = useState<string>('today')
+  const [allSites, setAllSites] = useState<string[]>(['all'])
 
   useEffect(() => {
     fetchData()
@@ -108,14 +109,16 @@ export default function AIBotsPage() {
       }
 
       setStats(Array.from(siteMap.values()).sort((a, b) => b.total - a.total))
+
+      // Update sites list with all unique sites from data
+      const uniqueSites = Array.from(new Set(allData.map(v => v.site))).sort()
+      setAllSites(['all', ...uniqueSites])
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to fetch data')
     } finally {
       setLoading(false)
     }
   }
-
-  const sites = ['all', 'glassadvisor.org', 'dentadvisor.org', 'windshieldadvisor.org', 'aios.marketing', 'carstudiospdr.com', 'cwcustomworks.com']
 
   const formatDate = (timestamp: string) => {
     return new Date(timestamp).toLocaleString()
@@ -134,7 +137,7 @@ export default function AIBotsPage() {
             onChange={(e) => setSelectedSite(e.target.value)}
             className="bg-gray-800 border border-gray-700 rounded-lg px-4 py-2"
           >
-            {sites.map(site => (
+            {allSites.map(site => (
               <option key={site} value={site}>
                 {site === 'all' ? 'All Sites' : site}
               </option>
